@@ -14,7 +14,15 @@ import Footer from "./componenets/sections/Footer";
 import NavBar from "./componenets/NavBar";
 
 // Pages
-import ProjectsPage from "./projects/ProjectsPage"; // you’ll create this later
+import ProjectsPage from "./projects/ProjectsPage"; 
+import ZeroLatency from "./projects/ZeroLatency";
+import HeapVisualizer from "./projects/HeapVisualizer";
+import SignalForecaster from "./projects/SignalForecaster";
+import GraphicsEngine from "./projects/GraphicsEngine";
+import AudioEngine from "./projects/AudioEngine";
+import TradingBot from "./projects/TradingBot";
+import SpaceInvaders from "./projects/SpaceInvaders";
+import OmegaRace from "./projects/OmegaRace";
 
 const HomePage = () => (
   <>
@@ -37,6 +45,14 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projects/order" element={<ZeroLatency />} />
+        <Route path="/projects/heap" element={<HeapVisualizer />} />
+        <Route path="/projects/signal" element={<SignalForecaster />} />
+        <Route path="/projects/graphics" element={<GraphicsEngine />} />
+        <Route path="/projects/audio" element={<AudioEngine />} />
+        <Route path="/projects/trading" element={<TradingBot />} />
+        <Route path="/projects/spaceinvaders" element={<SpaceInvaders />} />
+        <Route path="/projects/omegarace" element={<OmegaRace />} />
       </Routes>
     </BrowserRouter>
   );

@@ -22,49 +22,49 @@ const navLinks = [
 
 const projects = [
   {
-    slug: "zero-latency",
+    slug: "order",
     title: "Zero-Latency Orderbook Matching Engine",
     description: "Real-time matching engine using C++.",
     image: "/images/project4.png",
   },
   {
-    slug: "custom-memory",
+    slug: "heap",
     title: "Custom Memoy Heap Allocator & Visual Debugger",
     description: "Custom C++ memory allocator",
     image: "/images/project5.png",
   },
   {
-    slug: "signal-forecaster",
+    slug: "signal",
     title: "Real-Time Market Signal Forecaster",
     description: "Real-Time C++ and Python Market Signal Forecaster.",
     image: "/images/project6.png",
   },
   {
-    slug: "graphics-engine",
+    slug: "graphics",
     title: "Graphics Engine",
     description: "Real-Time Graphics Engine in C++",
     image: "/images/project7.png",
   },
   {
-    slug: "audio-engine",
+    slug: "audio",
     title: "Audio Engine",
     description: "Real-Time Multi-threaded Audio Engine in c++.",
     image: "/images/project8.png",
   },
   {
-    slug: "trading-bot",
+    slug: "trading",
     title: "Live 24/7 Algorithmic Trading Bot",
     description: "Fully Automated trading bot capable of executing trades 24/7.",
     image: "/images/project9.png",
   },
   {
-    slug: "space-invaders",
+    slug: "spaceinvaders",
     title: "Space Invaders Clone",
     description: "Built a Space Invaders Clone from Scratch",
     image: "/images/project10.png",
   },
   {
-    slug: "omega-race",
+    slug: "omegarace",
     title: "Omega Race",
     description: "Made Omega Race Networked",
     image: "/images/project11.png",
