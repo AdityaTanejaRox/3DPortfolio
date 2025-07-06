@@ -1,13 +1,14 @@
 import React from 'react'
 import {navLinks} from '../constants/index.js';
 import {useEffect, useState} from 'react'
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 const NavBar = () => {
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 10;
-            setScrolled(true);
+            setScrolled(window.scrollY > 10);
         }
 
         window.addEventListener('scroll', handleScroll);
@@ -18,20 +19,27 @@ const NavBar = () => {
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
         <div className="inner">
-            <a className="logo" href="#hero">
+            <HashLink className="logo" to="/#hero">
                 Aditya
-            </a>
+            </HashLink>
             <nav className="desktop">
-                <ul>
-                    {navLinks.map(({link, name}) =>(
-                        <li key={name} className="group">
-                            <a href={link}>
-                                <span>{name}</span>
-                                <span className="underline" />
-                            </a>
-                        </li>
-                    ))}
-                </ul>
+               <ul>
+            {navLinks.map(({ link, name }) => (
+              <li key={name} className="group">
+                {link.startsWith('#') ? (
+                  <HashLink smooth to={`/${link}`}>
+                    <span>{name}</span>
+                    <span className="underline" />
+                  </HashLink>
+                ) : (
+                  <Link to={link}>
+                    <span>{name}</span>
+                    <span className="underline" />
+                  </Link>
+                )}
+              </li>
+            ))}
+          </ul>
             </nav>
 
             <a href="#contact" className="contact-btn group">

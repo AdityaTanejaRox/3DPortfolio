@@ -15,7 +15,62 @@ const navLinks = [
     name: "Testimonials",
     link: "#testimonials",
   },
+  { name: "Projects",
+    link: "/projects" 
+  }
 ];
+
+const projects = [
+  {
+    slug: "zero-latency",
+    title: "Zero-Latency Orderbook Matching Engine",
+    description: "Real-time matching engine using C++.",
+    image: "/images/project4.png",
+  },
+  {
+    slug: "custom-memory",
+    title: "Custom Memoy Heap Allocator & Visual Debugger",
+    description: "Custom C++ memory allocator",
+    image: "/images/project5.png",
+  },
+  {
+    slug: "signal-forecaster",
+    title: "Real-Time Market Signal Forecaster",
+    description: "Real-Time C++ and Python Market Signal Forecaster.",
+    image: "/images/project6.png",
+  },
+  {
+    slug: "graphics-engine",
+    title: "Graphics Engine",
+    description: "Real-Time Graphics Engine in C++",
+    image: "/images/project7.png",
+  },
+  {
+    slug: "audio-engine",
+    title: "Audio Engine",
+    description: "Real-Time Multi-threaded Audio Engine in c++.",
+    image: "/images/project8.png",
+  },
+  {
+    slug: "trading-bot",
+    title: "Live 24/7 Algorithmic Trading Bot",
+    description: "Fully Automated trading bot capable of executing trades 24/7.",
+    image: "/images/project9.png",
+  },
+  {
+    slug: "space-invaders",
+    title: "Space Invaders Clone",
+    description: "Built a Space Invaders Clone from Scratch",
+    image: "/images/project10.png",
+  },
+  {
+    slug: "omega-race",
+    title: "Omega Race",
+    description: "Made Omega Race Networked",
+    image: "/images/project11.png",
+  },
+];
+
 
 const words = [
   { text: "Ideas", imgPath: "/images/ideas.svg" },
@@ -29,10 +84,10 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
+  { value: 1, suffix: "+", label: "Years of Experience" },
+  { value: 4, suffix: "+", label: "Satisfied Clients" },
   { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 97, suffix: "%", label: "Client Retention Rate" },
 ];
 
 const logoIconsList = [
@@ -150,36 +205,41 @@ const expCards = [
     review: "Aditya brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    title: "Backend Developer",
+    date: "December 2024 - Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Lead the migration of an existing codebase from C++ to Java, enhancing maintainability and cross-platform compatibility.",
+      "Developing a sistributed knowledge-based operating syatem, allowing users to upload, share and access research projects efficiently.",
+      "Implemented Java Networking solutions to facilitate seamless data exchange between researchers.",
+      "Engineered multi-threaded backend solutions using OOP design principles."
     ],
   },
   {
-    review: "Aditya’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review: "Aditya’s contributions to WallStreetQuant's alpha generation have been outstanding. He approaches challenges with a problem-solving mindset.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Quantative Researcher Intern",
+    date: "July 2024 - September 2024",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Developed and back tested statistical arbitrage strategies in cryptocurrency markets using Python, Pandas, and Numpy.",
+      "Integrated performance evaluation metrics (Sharpe, drawdown, alpha) and simulated execution with market impact models.",
+      "Engineered momentum and mean-revision models, achieving a Sharpe ratio os 1.8 and simulated annualized returns of 15-20%.",
+      "Implemented high-frequency data processing pipelines to analyse price-volume relationships and predict returns.",
+      "Optimized execution strategies to reduce trading costs by ~20bps per trade, incorporating market impact analysis.",
+      "Built backtesting frameworks for performance evaluation, tracking metrics such as volatility, max drawdown, and alpha/beta."
     ],
   },
   {
-    review: "Aditya’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review: "Aditya’s work on the project brought a high level of quality and efficiency. He delivered solutions that optimized our project & meet our product goals.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Software Developer Research Assistant",
+    date: "March 2024 - June 2024",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Designed and developed a distributed K-V storage system in Go with 99.9% availability, supporting 1M QPS with linearizable read/write operations.", 
+      "Leveraged consistent hashing for even data distribution and dynamic load balancing with data migration across Raft groups",
+      "Optimized performance using FollowerReads, RocksDB integration, and MVCC - reduced read latency by 42%",
+      "Integrated multiple storage engines (RocksDB, B+ trees, hash tables) for optimized performance, using MVCC for concurrency control.",
     ],
   },
 ];
@@ -275,4 +335,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  projects,
 };
